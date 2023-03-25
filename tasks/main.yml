@@ -16,7 +16,7 @@
 
 - name: Transfer an Ledgers artifact to the remote server
   ansible.builtin.copy:
-    src: "{{ deployment_loop }}"
+    src: "{{ deployment_ledgers }}"
     dest: "{{ deployment_workdir }}/scripts/"
     owner: "{{ deployment_user }}"
     group: "{{ deployment_group }}"

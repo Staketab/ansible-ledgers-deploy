@@ -1,7 +1,7 @@
 ---
 deployment_artifact: ../build/goledgers
 deployment_name: goledgers
-deployment_ledgers: ../scripts/*
+deployment_snarked: ../scripts/snarked.sh
 
 deployment_workdir: /opt/ledgers
 
