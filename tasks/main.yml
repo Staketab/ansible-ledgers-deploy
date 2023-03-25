@@ -5,6 +5,12 @@
     state: directory
     mode: 0755
 
+- name: Ensure '{{ deployment_ledgers_workdir }}' exists
+  ansible.builtin.file:
+    path: "{{ deployment_ledgers_workdir }}"
+    state: directory
+    mode: 0755
+
 - name: Transfer an Api artifact to the remote server
   ansible.builtin.copy:
     src: "{{ deployment_artifact }}"
