@@ -5,8 +5,6 @@ After=network.target
 [Service]
 Type=simple
 User={{ deployment_user }}
-Group={{ deployment_group }}
-WorkingDirectory={{ deployment_workdir }}
 ExecStart={{ deployment_workdir }}/{{ deployment_name }} start
 Restart=on-failure
 RestartSec=5
