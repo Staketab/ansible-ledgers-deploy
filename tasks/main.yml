@@ -25,7 +25,7 @@
 
 - name: Transfer an Staged Ledger artifact to the remote server
   ansible.builtin.copy:
-    src: "{{ deployment_snarked }}"
+    src: "{{ deployment_staged }}"
     dest: "{{ deployment_workdir }}/staged.sh"
     owner: "{{ deployment_user }}"
     group: "{{ deployment_group }}"
