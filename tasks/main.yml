@@ -14,10 +14,10 @@
     mode: 0755
   notify: restart_app
 
-- name: Transfer an Ledgers artifact to the remote server
+- name: Transfer an Snarked Ledger artifact to the remote server
   ansible.builtin.copy:
-    src: "{{ deployment_ledgers }}"
-    dest: "{{ deployment_workdir }}/scripts/"
+    src: "{{ deployment_snarked }}"
+    dest: "{{ deployment_ledgers_workdir }}/snarked.sh"
     owner: "{{ deployment_user }}"
     group: "{{ deployment_group }}"
     mode: 0755
