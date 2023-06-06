@@ -18,24 +18,3 @@ galaxy_info:
   - include_tasks: tasks/main.yml
 
 dependencies: []
-
-
-galaxy_info:
-  author: staketab
-  role_name: suid-deployment
-  dependencies:
-  - role: suid-deployment
-  description: Deploy a ledgers application
-  company: Staketab
-  license: MIT
-  min_ansible_version: 2.10
-  platforms:
-  - name: Debian
-    versions:
-    - bullseye
-  galaxy_tags:
-  - suid
-  - backend
-  - deployment
-  tasks:
-  - include_tasks: tasks/suid/main.yml
