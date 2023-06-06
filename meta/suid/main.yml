@@ -16,4 +16,5 @@ galaxy_info:
   - deployment
   tasks:
   - include_tasks: tasks/suid/main.yml
-dependencies: []
+dependencies:
+  - role: suid-deployment
