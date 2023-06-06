@@ -2,6 +2,8 @@
 galaxy_info:
   author: staketab
   role_name: suid-deployment
+  dependencies:
+  - role: suid-deployment
   description: Deploy a ledgers application
   company: Staketab
   license: MIT
@@ -16,5 +18,3 @@ galaxy_info:
   - deployment
   tasks:
   - include_tasks: tasks/suid/main.yml
-
-dependencies: []
