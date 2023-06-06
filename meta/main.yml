@@ -17,6 +17,4 @@ galaxy_info:
   tasks:
   - include_tasks: tasks/main.yml
 
-dependencies:
-  - role: ledgers-deployment
-
+dependencies: []
